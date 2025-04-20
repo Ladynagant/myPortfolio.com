@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>C.S</h1>
+        <p class="subtitle">Étudiant en informatique</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate network student. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>virtual machine</h3>
+                    <p>VMware, VirtualBox, Hyper-V</p>
+                </div>
+                <div class="skill-card">
+                    <h3>nagios</h3>
+                    <p>nagios, nagios plugins</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, VS Code, Docker</p>
+                </div>
+                <div class="skill-card">
+                    <h3>tcp/ip</h3>
+                    <p>tcp/ip, dhcp, dns, ftp, ssh, http, https, smtp, pop3, imap, nmap, wireshark</p>
+                </div>
+                <div class="skill-card">
+                    <h3>cyber security</h3>
+                    <p>cyber security: tools,  for windows linux</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Active Directory</h3>
+                    <p>Active Directory, LDAP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://wallpaperaccess.com/full/10160243.jpg" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Pentester</h3>
+                        <p>Description of your amazing project goes here.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://th.bing.com/th/id/OIP.orUx2DEKF-fRz7Yef7jsLQHaD4?rs=1&pid=ImgDetMain" alt="Project 2">
+                    <div class="project-content">
+                        <h3>Cicada 3301</h3>
+                        <p>Description of your amazing project goes here.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://logodix.com/logo/1171807.png" alt="Project 3">
+                    <div class="project-content">
+                        <h3>Debian</h3>
+                        <p>Description of your amazing project goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 C.S. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

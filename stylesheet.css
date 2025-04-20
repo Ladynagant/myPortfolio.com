@@ -1,0 +1,200 @@
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1920x1080?nature') center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        color: rgb(100, 124, 149);
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(122, 135, 171);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #201391;
+    }
+
+    section {
+        padding: 5rem 2rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #5a529eb7;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #534186;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .skill-card {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #56689ff1;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .social-links {
+        margin-top: 1rem;
+    }
+
+    .social-links a {
+        color: white;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+    }
+</style>
